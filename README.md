@@ -494,15 +494,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ---
 
-## 👤 Author
-
-**Your Name**
-- Portfolio: [your-portfolio.com]
-- LinkedIn: [linkedin.com/in/yourprofile]
-- GitHub: [github.com/yourusername]
-
----
-
 ## 🙏 Acknowledgments
 
 - Dataset: UCI Machine Learning Repository - Diabetes 130-US Hospitals
@@ -514,9 +505,8 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## 📞 Contact
 
 For questions, suggestions, or collaboration opportunities, please reach out through:
-- Email: your.email@example.com
-- LinkedIn: [Your LinkedIn Profile]
-- GitHub Issues: [Repository Issues Page]
+- Email: likithagedipudic@gmail.com
+- LinkedIn: https://www.linkedin.com/in/likitha-gedipudi/
 
 ---
 
