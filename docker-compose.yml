@@ -1,0 +1,49 @@
+# Docker Compose configuration for Hospital Readmission System
+version: '3.8'
+
+services:
+  # API Service
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: readmission-api
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./models:/app/models
+      - ./data/processed:/app/data/processed
+    environment:
+      - FLASK_ENV=production
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
+    networks:
+      - readmission-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # Dashboard Service (optional - run separately if needed)
+  # dashboard:
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile.dashboard
+  #   container_name: readmission-dashboard
+  #   ports:
+  #     - "8050:8050"
+  #   depends_on:
+  #     - api
+  #   volumes:
+  #     - ./models:/app/models
+  #     - ./data/processed:/app/data/processed
+  #   restart: unless-stopped
+  #   networks:
+  #     - readmission-network
+
+networks:
+  readmission-network:
+    driver: bridge
+

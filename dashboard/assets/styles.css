@@ -1,0 +1,58 @@
+/* Custom styles for Hospital Readmission Dashboard */
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+h1 {
+    color: #2c3e50;
+    font-weight: 700;
+}
+
+h2 {
+    font-weight: 600;
+}
+
+h4.card-title {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.dash-table-container {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.Select-control {
+    border-radius: 5px;
+}
+
+/* Risk level colors */
+.risk-high {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+.risk-medium {
+    color: #ffc107;
+    font-weight: bold;
+}
+
+.risk-low {
+    color: #28a745;
+    font-weight: bold;
+}
+
